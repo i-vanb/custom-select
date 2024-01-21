@@ -1,0 +1,50 @@
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  &__content{
+    background-color: #FFFFFF;
+    color: #8493a8;
+    border: 1px solid #8493a8;
+    width: 400px;
+    max-width: 100%;
+    min-height: 100px;
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+
+    &__close{
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      width: 12px;
+      height: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0,0,0,0);
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='%23A2A9B4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.737458 2.51987L2.88596 0.371368L15.6286 13.114L13.4801 15.2625L0.737458 2.51987Z' /%3E%3Cpath d='M2.79944 15.3243L0.675659 13.2006L13.5667 0.309568L15.6904 2.43335L2.79944 15.3243Z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border: none;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      opacity: 0.7;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+}
